@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		77F9862A1D2D12DE0034D39F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986291D2D12DE0034D39F /* main.m */; };
 		77F9862D1D2D12DE0034D39F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F9862C1D2D12DE0034D39F /* AppDelegate.m */; };
-		77F986301D2D12DE0034D39F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F9862F1D2D12DE0034D39F /* ViewController.m */; };
 		77F986331D2D12DE0034D39F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F986311D2D12DE0034D39F /* Main.storyboard */; };
 		77F986361D2D12DE0034D39F /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77F986341D2D12DE0034D39F /* CoreDataTest.xcdatamodeld */; };
 		77F986381D2D12DE0034D39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F986371D2D12DE0034D39F /* Assets.xcassets */; };
 		77F9863B1D2D12DE0034D39F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F986391D2D12DE0034D39F /* LaunchScreen.storyboard */; };
+		77F986451D2D162F0034D39F /* HEDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986441D2D162F0034D39F /* HEDeviceViewController.m */; };
+		77F986481D2D165B0034D39F /* HEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986471D2D165B0034D39F /* HEDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,15 @@
 		77F986291D2D12DE0034D39F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77F9862B1D2D12DE0034D39F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77F9862C1D2D12DE0034D39F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77F9862E1D2D12DE0034D39F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77F9862F1D2D12DE0034D39F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77F986321D2D12DE0034D39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77F986351D2D12DE0034D39F /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
 		77F986371D2D12DE0034D39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77F9863A1D2D12DE0034D39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77F9863C1D2D12DE0034D39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F986431D2D162F0034D39F /* HEDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEDeviceViewController.h; sourceTree = "<group>"; };
+		77F986441D2D162F0034D39F /* HEDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEDeviceViewController.m; sourceTree = "<group>"; };
+		77F986461D2D165B0034D39F /* HEDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEDetailViewController.h; sourceTree = "<group>"; };
+		77F986471D2D165B0034D39F /* HEDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +63,9 @@
 		77F986271D2D12DE0034D39F /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				77F986421D2D160D0034D39F /* ViewControllers */,
 				77F9862B1D2D12DE0034D39F /* AppDelegate.h */,
 				77F9862C1D2D12DE0034D39F /* AppDelegate.m */,
-				77F9862E1D2D12DE0034D39F /* ViewController.h */,
-				77F9862F1D2D12DE0034D39F /* ViewController.m */,
 				77F986311D2D12DE0034D39F /* Main.storyboard */,
 				77F986371D2D12DE0034D39F /* Assets.xcassets */,
 				77F986391D2D12DE0034D39F /* LaunchScreen.storyboard */,
@@ -80,6 +82,17 @@
 				77F986291D2D12DE0034D39F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77F986421D2D160D0034D39F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77F986431D2D162F0034D39F /* HEDeviceViewController.h */,
+				77F986441D2D162F0034D39F /* HEDeviceViewController.m */,
+				77F986461D2D165B0034D39F /* HEDetailViewController.h */,
+				77F986471D2D165B0034D39F /* HEDetailViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +121,7 @@
 		77F9861D1D2D12DE0034D39F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Hegefix;
 				TargetAttributes = {
 					77F986241D2D12DE0034D39F = {
@@ -153,10 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F986481D2D165B0034D39F /* HEDetailViewController.m in Sources */,
 				77F986361D2D12DE0034D39F /* CoreDataTest.xcdatamodeld in Sources */,
-				77F986301D2D12DE0034D39F /* ViewController.m in Sources */,
 				77F9862D1D2D12DE0034D39F /* AppDelegate.m in Sources */,
 				77F9862A1D2D12DE0034D39F /* main.m in Sources */,
+				77F986451D2D162F0034D39F /* HEDeviceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +210,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -240,8 +256,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -305,6 +323,7 @@
 				77F986411D2D12DE0034D39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
